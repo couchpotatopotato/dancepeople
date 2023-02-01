@@ -18,18 +18,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        options: { presets: ['@babel/env'] },
-      },
-      {
-        test: /\.(ts|tsx)$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
-        resolve: {
-          extensions: ['.ts', '.tsx', '.js', '.json'],
+        use: {
+          loader: 'babel-loader',
         },
-        use: 'ts-loader',
       },
       {
         test: /\.(s(a|c)ss)$/,
@@ -43,4 +36,7 @@ module.exports = {
       template: 'index.html',
     }),
   ],
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+  },
 };
