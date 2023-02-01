@@ -1,7 +1,5 @@
 import { ReactElement } from 'react';
 
-import './index.scss';
-
 export const App = (): ReactElement => {
   return (
     <div className="App">

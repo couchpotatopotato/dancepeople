@@ -4,7 +4,6 @@
     "baseUrl": "src",
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
